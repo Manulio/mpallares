@@ -1,0 +1,49 @@
+.ball1{
+    @include addball(0s,80rem,80rem,0,0,ball1);
+
+}
+.ball2{
+    @include addball(0s,80rem,80rem,calc(100vw -80rem),0,ball2);
+
+}
+.ball3{
+    @include addball(0s,80rem,80rem,0,-100vh,ball3);
+
+}
+.ball4{
+    @include addball(0s,80rem,80rem,0,-80rem,ball4);
+
+}
+.ball5{
+    @include addball(10s,80rem,80rem,0,0,ball1);
+
+}
+.ball6{
+    @include addball(10s,80rem,80rem,calc(100vw -80rem),0,ball2);
+
+}
+.ball7{
+    @include addball(10s,80rem,80rem,0,-100vh,ball3);
+
+}
+.ball8{
+    @include addball(10s,80rem,80rem,0,-80rem,ball4);
+
+}
+.ball9{
+    @include addball(20s,80rem,80rem,0,0,ball1);
+
+}
+.ball10{
+    @include addball(20s,80rem,80rem,calc(100vw -80rem),0,ball2);
+
+}
+.ball11{
+    @include addball(20s,80rem,80rem,0,-100vh,ball3);
+
+}
+.ball12{
+    @include addball(20s,80rem,80rem,0,-80rem,ball4);
+
+}
+

@@ -1,0 +1,70 @@
+
+
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fuenteSecundaria;
+    font-size: 1.6rem;
+    background-color: $principal;
+    overflow: hidden;
+    position: fixed;
+    margin-left: 0;
+
+    @include tablet{    
+        margin-left:20vw;
+
+    }
+    
+}
+
+p {
+    font-size: 2rem;
+    color: $secundario;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: $oro;
+    font-family: $fuentePrincipal;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}

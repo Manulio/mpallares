@@ -1,0 +1,20 @@
+.footer{
+box-sizing: inherit;
+width: 100%;
+    position: fixed;
+    background-color: #111;
+    bottom: 0;
+    align-items: center;
+    @include tablet{
+        margin-left:-20vw;
+
+    }
+    p{
+        margin: 0 auto;  
+          font-size: 1.5rem;
+          text-align: center;
+          padding: 1.5rem;
+          color: $blanco
+
+    }
+}

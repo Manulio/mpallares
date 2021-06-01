@@ -1,0 +1,85 @@
+
+.header {
+    @include telefono{
+            @include grid(2, $separacion);
+            
+    }
+    .titulo,
+    .contenedor-navegacion {
+        @include telefono{
+            height: calc(100vh - 10px);
+            gap: 2rem;
+            flex-flow: column;
+            justify-content: center;
+        }
+        display: flex;
+        
+    }
+    .titulo {
+        margin-left: 5rem;
+        @include tablet{
+            margin-left: 0rem;
+        }
+        
+        align-items: center;
+        h1 {
+            @include telefono{
+                font-size: 7rem;
+                padding-top: initial;
+                padding-left: unset;
+          
+            }
+            padding-left: 2rem;
+            padding-top: 3rem;
+            font-size: 5rem;
+            text-shadow: 5px 5px 5px rgba($color: #000000, $alpha: .5);
+            animation-name: clear-text-shadow;
+            animation-duration: .3s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        }
+    }
+    .contenedor-navegacion {
+           align-items: flex-start;
+            padding-left: 12rem; 
+            padding-top: 10rem;
+            @include telefono{
+                padding-top: unset;
+                padding-left: 8rem;
+                
+            }
+        
+    }
+    .navegacion {
+        display: grid;
+        gap: 2rem;
+        
+        
+        a {
+            text-shadow: 5px 5px 5px rgba($color: #000000, $alpha: .5);
+            color: $blanco;
+            font-family: $fuentePrincipal;
+            font-size: 5rem;
+            text-align: right;
+            &:hover {
+                color: $oro;
+            }
+        }
+        .trabajo,
+        .cv,
+        .contacto {
+            animation-name: appear;
+            animation-duration: 0s;
+            animation-fill-mode: both;
+        }
+        .trabajo {
+            animation-delay: 1.4s;
+        }
+        .cv {
+            animation-delay: 1.6s;
+        }
+        .contacto {
+            animation-delay: 1.8s;
+        }
+    }
+}

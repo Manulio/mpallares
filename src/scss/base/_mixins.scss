@@ -1,0 +1,69 @@
+@mixin telefono {
+    @media (min-width: $telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+@mixin addball($delay,$w,$h, $l, $t, $ball){
+    &{
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgba($color: #000000, $alpha: .05);
+    z-index: -1;
+    width: $w;
+    height: $h;
+    margin-left: $l;
+    margin-top: $t;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    animation-name: $ball;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: $delay;
+    }
+    
+}
+
+@mixin addline($mtopt,$mleftt,$margin-top, $margin-left, $w, $h, $aniname, $anidur,$andel){
+    
+    &{
+        border: 1px solid $oro;
+        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: .5);
+        visibility: visible;
+        position: absolute;
+        width: $w;
+        height: $h;
+        margin-top: $mtopt;
+        margin-left: $mleftt;
+    
+        animation-name: $aniname;
+        animation-duration: $anidur;
+        animation-fill-mode: both; 
+        animation-delay: $andel;
+        @include telefono{
+            margin-top: $margin-top;
+            margin-left: $margin-left;
+            position: absolute;
+
+        }
+        
+    }
+   
+}
