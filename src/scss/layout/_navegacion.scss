@@ -1,4 +1,12 @@
-
+.titulo-contacto{
+    display: flex;
+    margin-left: 5rem;
+    justify-content: center;
+    @include tablet{
+        margin-left: 5rem;
+    }
+    
+}
 .header {
     @include telefono{
             @include grid(2, $separacion);
@@ -48,6 +56,7 @@
                 padding-left: 8rem;
                 
             }
+            
         
     }
     .navegacion {
@@ -67,12 +76,15 @@
         }
         .trabajo,
         .cv,
-        .contacto {
+        .contacto,
+        .volver,
+        .mail,
+        .volver-contacto{
             animation-name: appear;
             animation-duration: 0s;
             animation-fill-mode: both;
         }
-        .trabajo {
+        .trabajo,.volver{
             animation-delay: 1.4s;
         }
         .cv {
@@ -81,5 +93,50 @@
         .contacto {
             animation-delay: 1.8s;
         }
+        .volver,.mail{
+            @include telefono{
+                margin-top: -13rem;
+
+            }
+            margin-top: -0rem;
+        }
+        .volver-contacto{
+            @include telefono{
+                margin-top: -14rem;
+                padding-left: 4rem; 
+
+            }
+
+        }
+        .mail{
+            animation-delay: 1.6s;
+        }
+        
+        
     }
+}
+.mantenimiento{
+    position: absolute;
+    animation-name: appear;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-delay: 1.6s;
+    margin-top: 10rem;
+    margin-left: unset;
+    margin-right: 5rem;
+
+    @include telefono{
+        margin-top: unset;
+        margin-left: -5rem;
+    }
+
+}
+.mail{
+    @include telefono{    margin-left: unset;
+
+   
+    }
+    margin-left: -9rem;
+
+    font-size: 1.8rem;
 }

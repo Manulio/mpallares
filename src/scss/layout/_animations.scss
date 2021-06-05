@@ -18,6 +18,17 @@
     }
 }
 
+@keyframes showline-mail {
+    0% {
+        visibility: hidden;
+        width: 0;
+    }
+    100% {
+        width: 5rem;
+        visibility: visible;
+    }
+}
+
 @keyframes showline-cv {
     0% {
         visibility: hidden;

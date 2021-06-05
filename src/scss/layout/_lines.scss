@@ -4,10 +4,13 @@
 }
 
 .line-mid {
-    @include addline(-100vh,2rem,-110vh,50%,1px,0,showline-mid,2s,0);
+    @include addline(-80vh,2rem,-120vh,50%,1px,0,showline-mid,2s,0);
 }
 .line-trabajos {
     @include addline(-18.5rem,2rem,calc(-50vh - 7.5rem),50%,0,1px,showline-trabajos,.5s,1s);
+}
+.line-volver {
+    @include addline(-3.5rem,2rem,calc(-50vh - 10rem),50%,0,1px,showline-trabajos,.5s,1s);
 }
 
 .line-cv {
@@ -17,4 +20,17 @@
 .line-contacto {
     @include addline(calc(-18.5rem + 7.5rem * 2),2rem,calc(-50vh + 7.5rem),50%,0,1px,showline-contacto,.5s,1.4s);
     
+}
+
+.line-mail{
+    @include addline(100rem,2rem,-49.3rem,2rem,0,1px,showline-mail,.5s,1s);
+}
+
+.line-right{
+    @include addline(-80vh,2rem,-125vh,2rem,1px,0,showline-mid,2s,0);
+
+}
+.line-contacto2{
+    @include addline(-3.5rem,2rem,calc(-50vh - 11.5rem),2rem,0,1px,showline-trabajos,.5s,1s);
+
 }

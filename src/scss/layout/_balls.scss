@@ -1,3 +1,7 @@
+.balls{
+    margin-left: -15vw
+}
+
 .ball1{
     @include addball(0s,80rem,80rem,0,0,ball1);
 
